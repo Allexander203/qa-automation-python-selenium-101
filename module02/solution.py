@@ -1,4 +1,4 @@
-def num_add(a=1,b=0):
+def num_add(a,b):
 
 	return a+b
 
@@ -42,35 +42,36 @@ def fatten_pancakes(dict):
 	return PANCAKE_INGREDIENTS(eggs = 6, butter = True)
 
 def add_sugar(dict):
-	return PANCAKE_INGREDIENTS(sugar=0)
+	PANCAKE_INGREDIENTS["sugar"]
+	return PANCAKE_INGREDIENTSc()
 
 def remove_salt(dict):
-	del PANCAKE_INGREDIENTS['salt']
-	return PANCAKE_INGREDIENTS()
+	dict_copy = dict.copy()
+	del dict['salt']
+	return dict_copy()
 
-lst = []
-lst.append(1)
-lst.append(1)
-lst.append(2)
-lst.append(3)
-lst.append(5)
-lst.append(8)
-lst.append(13)
-lst.append(21)
-lst.append(34)
-lst.append(55)
-lst.append(89)
-lst.append(144)
+FIBONACCI_NUMBERS = []
+FIBONACCI_NUMBERS.append(1)
+FIBONACCI_NUMBERS.append(1)
+FIBONACCI_NUMBERS.append(2)
+FIBONACCI_NUMBERS.append(3)
+FIBONACCI_NUMBERS.append(5)
+FIBONACCI_NUMBERS.append(8)
+FIBONACCI_NUMBERS.append(13)
+FIBONACCI_NUMBERS.append(21)
+FIBONACCI_NUMBERS.append(34)
+FIBONACCI_NUMBERS.append(55)
+FIBONACCI_NUMBERS.append(89)
+FIBONACCI_NUMBERS.append(144)
 
 # print(FIBONACCI_NUMBERS)
 
-def add_fibonacci(lst): 
-	lst.append(len(lst[])-1+len(lst[])-2)
+def add_fibonacci(lst):
+	lst.append(len(lst)-1+len(lst)-2)
 	return lst
 
 def fib_exists(lst, n):
-	return bool(n in FIBONACCI_NUMBERS)
-# За тази задача не разбрах условието напълно .
+	return bool(n in lst)
 def which_fib(lst, n):
 	return n
 
