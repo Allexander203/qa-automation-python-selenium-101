@@ -35,20 +35,24 @@ PANCAKE_INGREDIENTS = dict(
   butter = False,
   salt = 0.001)
 
-def ingredient_exists(ingr, dict):
+def ingredient_exists(ingr,dict):
 	return (bool(ingr))
 
 def fatten_pancakes(dict):
-	return PANCAKE_INGREDIENTS(eggs = 6, butter = True)
-
+	dict_copy = dict.copy()
+	dict_copy['butter'] = True
+	dict_copy['eggs'] = 6
+	return dict_copy
+	# (eggs = 6, butter = True)
 def add_sugar(dict):
-	PANCAKE_INGREDIENTS["sugar"]
-	return PANCAKE_INGREDIENTSc()
+	dict_copy = dict.copy()
+	dict_copy['sugar']="sugar"
+	return dict_copy
 
 def remove_salt(dict):
 	dict_copy = dict.copy()
-	del dict['salt']
-	return dict_copy()
+	del dict_copy['salt']
+	return dict_copy
 
 FIBONACCI_NUMBERS = []
 FIBONACCI_NUMBERS.append(1)
@@ -67,7 +71,9 @@ FIBONACCI_NUMBERS.append(144)
 # print(FIBONACCI_NUMBERS)
 
 def add_fibonacci(lst):
+	print(lst)
 	lst.append(len(lst)-1+len(lst)-2)
+	print(lst)
 	return lst
 
 def fib_exists(lst, n):
