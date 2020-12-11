@@ -71,9 +71,9 @@ FIBONACCI_NUMBERS.append(144)
 # print(FIBONACCI_NUMBERS)
 
 def add_fibonacci(lst):
-	print(lst)
-	lst.append(len(lst)-1+len(lst)-2)
-	print(lst)
+	# print(lst)
+	lst.append(lst[-1]+lst[-2])
+	# print(lst)
 	return lst
 
 def fib_exists(lst, n):
