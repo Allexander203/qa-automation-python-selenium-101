@@ -24,9 +24,9 @@ def num_rem(a,b):
 
 IS_TRUE = True 
 IS_FALSE = False 
-print(bool( IS_TRUE))
+# print(bool( IS_TRUE))
 
-print(bool( IS_FALSE))
+# print(bool( IS_FALSE))
 
 PANCAKE_INGREDIENTS = dict(
   flour = 2,
@@ -36,7 +36,8 @@ PANCAKE_INGREDIENTS = dict(
   salt = 0.001)
 
 def ingredient_exists(ingr,dict):
-	return (bool(ingr))
+
+	return ingr in dict
 
 def fatten_pancakes(dict):
 	dict_copy = dict.copy()
@@ -73,14 +74,15 @@ FIBONACCI_NUMBERS.append(144)
 def add_fibonacci(lst):
 	# print(lst)
 	lst.append(lst[-1]+lst[-2])
-	# lst.append(len(lst)-1+len(lst)-2)
 	# print(lst)
 	return lst
 
 def fib_exists(lst, n):
 	return bool(n in lst)
+
 def which_fib(lst, n):
-	return n
+
+	return lst[n]
 
 
 
